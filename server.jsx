@@ -24,6 +24,8 @@ app.post('/shortUrls', async (req,res)=>{
 
 })
 
+
+//making the url short
 app.get('/:shortUrl', async (req,res) => {
     const shortUrl= await ShortUrl.findOne({short: req.params.shortUrl}) ;
 
